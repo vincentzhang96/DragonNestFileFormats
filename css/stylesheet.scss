@@ -1,0 +1,20 @@
+---
+---
+
+$bg-fill: #30353D;
+
+.main-body {
+	background-color: $bg-fill;
+
+	.body-content {
+		background-color: #EEE;
+		padding: 0px 40px 40px 40px;
+		box-shadow: 4px 4px 5px $bg-fill - #202020;
+	}
+}
+
+
+footer {
+	margin: 10px;
+	color: $bg-fill + #333;
+}

@@ -1,5 +1,5 @@
 ---
-title: Dragon Nest File Formats
+title: Main Page
 layout: default
 permalink: /
 ---
