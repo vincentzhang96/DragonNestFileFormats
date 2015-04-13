@@ -9,15 +9,15 @@ This is a reference for file specifications used by Dragon Nest, as well as figu
 
 ##Formats
 
- - [Package (.pak)](/pak)
- - [Dragon Nest Table (.dnt)](/subfile/dnt)
- - [Map INI files (.ini)](/subfile/ini)
+ - [Package (.pak)](pak)
+ - [Dragon Nest Table (.dnt)](subfile/dnt)
+ - [Map INI files (.ini)](subfile/ini)
 
 ##Contributing
 
 If you wish to contribute to the project, please make a [pull request](https://github.com/vincentzhang96/DragonNestFileFormats/pulls) on [GitHub](https://github.com/vincentzhang96/DragonNestFileFormats).
 
-Please make a best effort to follow the [style guidelines](/styleguide) when contributing.
+Please make a best effort to follow the [style guidelines](styleguide) when contributing.
 
 ##Legal
 Dragon Nest File Formats (the Project) is not affiliated with Eyedentity Games or Nexon America.
