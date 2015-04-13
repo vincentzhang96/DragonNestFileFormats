@@ -6,6 +6,11 @@ $bg-fill: #30353D;
 .main-body {
 	background-color: $bg-fill;
 
+	.jumbotron {
+		background-color: #06A;
+		color: white;
+	}
+
 	.body-content {
 		background-color: #EEE;
 		padding: 0px 40px 40px 40px;
