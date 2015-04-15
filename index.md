@@ -9,9 +9,9 @@ This is a reference for file specifications used by Dragon Nest, as well as figu
 
 ##Formats
 
- - [Package (.pak)](pak)
- - [Dragon Nest Table (.dnt)](subfile/dnt)
- - [Map INI files (.ini)](subfile/ini)
+ - [Package (.pak)](files/pak/)
+ - [Dragon Nest Table (.dnt)](files/dnt/)
+ - [Map INI files (.ini)](files/ini/)
 
 ##Contributing
 
