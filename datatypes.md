@@ -26,12 +26,14 @@ Fixed Buffer NTSTRs are allocated a fixed size `n` and may take up from 0 to `n`
 
 Fixed Buffer NTSTRS are notated using the array syntax with `FBSTR`, so a FBSTR with size 128 would be written `FBSTR[128]`, and an array of 12 size 128 FBSTRs would be written `FBSTR[128][12]`.
 
-To read a `FBSTR`, allocate `n` bytes (or `n + 1` for languages that require the `NUL` byte) and read in `n` bytes from the file. For languages that are length-prefix based, truncate the string at the first `NUL` byte. For languages that are null-terminated based, nothing else need be done, unless there is a need to compact the buffer.
+To read a `FBSTR`, allocate `n` bytes (or `n + 1` for languages that require the `NUL` byte) and read in `n` bytes from the file. For languages that are not null-terminated based, truncate the string at the first `NUL` byte. For languages that are, nothing else need be done, unless there is a need to compact the buffer.
 
 ####Length Prefixed Null Terminated Strings
 Length Prefixed NTSTRs have a `uint32` length field `len` prefixed to the string itself. The length includes the `NUL` byte at the end, so the actual string length is `len - 1`.
 
 Length Prefixed NTSTRs are notated simply by `LPSTR`, with no array syntax (since the length is variable).
+
+To read a `LPSTR`, read in a `uint32` as `len` and allocate a buffer that is `len` bytes. Read in `len` bytes from file. For languages that are not null-terminated based, truncate the last byte from the string. For languages that are, nothing else need be done.
 
 ###Structures
 Structures will be defined explicitly in each format and referred to using the listed tag.
