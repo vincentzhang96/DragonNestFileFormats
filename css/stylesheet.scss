@@ -5,7 +5,7 @@ $bg-fill: #30353D;
 $dark-blue: #122951;
 
 .main-body {
-	background-color: $bg-fill;
+	background-color: #EEE;
 
 	.jumbotron {
 		background-color: $dark-blue;
@@ -13,14 +13,19 @@ $dark-blue: #122951;
 	}
 
 	.body-content {
-		background-color: #EEE;
 		padding: 0px 40px 40px 40px;
-		box-shadow: 4px 4px 5px $bg-fill - #202020;
 	}
 }
 
 .default-body {
+	background-color: $bg-fill;
 	padding-top: 70px;
+
+	.body-content {
+		background-color: #EEE;
+		padding: 0px 40px 40px 40px;
+		box-shadow: 4px 4px 5px $bg-fill - #202020;
+	}
 }
 
 
@@ -38,3 +43,4 @@ footer {
 	
 	background-color: $dark-blue - #101010;
 }
+
