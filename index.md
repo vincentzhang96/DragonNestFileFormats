@@ -8,6 +8,8 @@ repolink: /blob/gh-pages/index.md
 
 ##Formats
 
+[Data Types](datatypes/)
+
  - [Package (.pak)](files/pak/)
  - [Dragon Nest Table (.dnt)](files/dnt/)
  - [Map INI files (.ini)](files/ini/)
