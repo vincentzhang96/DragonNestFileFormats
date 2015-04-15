@@ -3,6 +3,7 @@ title: Dragon Nest File Formats
 subtitle: Community reference for various Dragon Nest files
 layout: jumbo
 permalink: /
+repolink: /blob/gh-pages/index.md
 ---
 
 This is a reference for file specifications used by Dragon Nest, as well as figuring out how they interact with the game.
