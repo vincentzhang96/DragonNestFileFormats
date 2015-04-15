@@ -2,12 +2,13 @@
 ---
 
 $bg-fill: #30353D;
+$dark-blue: #122951;
 
 .main-body {
 	background-color: $bg-fill;
 
 	.jumbotron {
-		background-color: #06A;
+		background-color: $dark-blue;
 		color: white;
 	}
 
@@ -18,8 +19,22 @@ $bg-fill: #30353D;
 	}
 }
 
+.default-body {
+	padding-top: 70px;
+}
+
 
 footer {
 	margin: 10px;
 	color: $bg-fill + #333;
+}
+
+.navbar-inverse {
+	background-color: $dark-blue;
+}
+.navbar-inverse .navbar-nav > .active > a,
+ .navbar-inverse .navbar-nav > .active > a:focus,
+  .navbar-inverse .navbar-nav > .active > a:hover {
+	
+	background-color: $dark-blue - #101010;
 }
