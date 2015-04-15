@@ -3,9 +3,10 @@
 
 $bg-fill: #30353D;
 $dark-blue: #122951;
+$body-fill: #EEE;
 
 .main-body {
-	background-color: #EEE;
+	background-color: $body-fill;
 
 	.jumbotron {
 		background-color: $dark-blue;
@@ -22,10 +23,29 @@ $dark-blue: #122951;
 	padding-top: 70px;
 
 	.body-content {
-		background-color: #EEE;
+		background-color: $body-fill;
 		padding: 0px 40px 40px 40px;
 		box-shadow: 4px 4px 5px $bg-fill - #202020;
 	}
+}
+
+.body-404 {
+	.btn-primary {
+		background-color: $dark-blue + #222;
+		border-color: white;
+		color: white;
+	}
+	.btn-default {
+		background-color: $dark-blue;
+		border-color: white;
+		color: white;
+	}
+	.btn-primary:hover,
+	.btn-default:hover {
+		background-color: white;
+		color: $dark-blue;
+	}
+
 }
 
 
