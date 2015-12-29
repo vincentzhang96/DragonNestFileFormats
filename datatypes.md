@@ -21,19 +21,19 @@ For instance, an array of 12 `uint64` would be written `uint64[12]` and a 256 by
 ###Strings
 The Strings used in DragonNest are all encoded using UTF-8. Strings are either fixed buffer null terminated or length prefixed null terminated. Null Terminated String is abbreviated NTSTR for convienence.
 
-####Fixed Buffer Null Terminated Strings
-Fixed Buffer NTSTRs are allocated a fixed size `n` and may take up from 0 to `n` bytes. The end of the string is marked by the `NUL` byte 0x00, or by the end of the buffer.
+####Fixed Buffer Null Terminated Strings (FBSTR)
+FBSTRs are allocated a fixed size `n` and may take up from 0 to `n` bytes. The end of the string is marked by the `NUL` byte 0x00, or by the end of the buffer.
 
-Fixed Buffer NTSTRS are notated using the array syntax with `FBSTR`, so a FBSTR with size 128 would be written `FBSTR[128]`, and an array of 12 size 128 FBSTRs would be written `FBSTR[128][12]`.
+FBSTRs are notated using the array syntax with `FBSTR`, so a FBSTR with size 128 would be written `FBSTR[128]`, and an array of 12 size 128 FBSTRs would be written `FBSTR[128][12]`.
 
-To read a `FBSTR`, allocate `n` bytes (or `n + 1` for languages that require the `NUL` byte) and read in `n` bytes from the file. For languages that are not null-terminated based, truncate the string at the first `NUL` byte. For languages that are, nothing else need be done, unless there is a need to compact the buffer.
+To read a FBSTR, allocate `n` bytes (or `n + 1` for languages that require the `NUL` byte) and read in `n` bytes from the file. For languages that are not null-termination based, truncate the string at the first `NUL` byte. For languages that are, nothing else need be done, unless there is a need to compact the buffer.
 
-####Length Prefixed Null Terminated Strings
-Length Prefixed NTSTRs have a `uint32` length field `len` prefixed to the string itself. The length includes the `NUL` byte at the end, so the actual string length is `len - 1`.
+####Length Prefixed Null Terminated Strings (LPSTR)
+LPSTRs have a `uint32` length field `len` prefixed to the string itself. The length includes the `NUL` byte at the end, so the actual string length is `len - 1`.
 
-Length Prefixed NTSTRs are notated simply by `LPSTR`, with no array syntax (since the length is variable).
+LPSTRs are notated simply by `LPSTR`, with no array syntax (since the length is variable).
 
-To read a `LPSTR`, read in a `uint32` as `len` and allocate a buffer that is `len` bytes. Read in `len` bytes from file. For languages that are not null-terminated based, truncate the last byte from the string. For languages that are, nothing else need be done.
+To read a LPSTR, read in a `uint32` as `len` and allocate a buffer that is `len` bytes. Read in `len` bytes from file. For languages that are not null-termination based, truncate the last byte from the string. For languages that are, nothing else need be done.
 
 ###Structures
 Structures will be defined explicitly in each format and referred to using the listed tag.
