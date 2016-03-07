@@ -28,5 +28,19 @@
     "type": "UINT32",
     "value": null,
     "description": "A pointer to the location of this file's data."
+  },
+  {
+    "name": "Unknown A",
+    "type": "UINT32",
+    "value": null,
+    "description": "Unknown. Seems to have no effect."
+  },
+  {
+    "name": "Unknown B",
+    "type": "40 bytes",
+    "value": {
+      "data": "NUL x 40"
+    },
+    "description": "Unknown. Seems to be just padding for future expansion. Filled with NUL bytes."
   }
 ]
