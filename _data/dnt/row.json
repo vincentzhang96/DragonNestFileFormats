@@ -1,8 +1,0 @@
-[
-  {
-    "name": "Cell Entries",
-    "type": "Cell[Header.ColumnCount]",
-    "value": null,
-    "description": "Array of cells, one per column of data."
-  }
-]

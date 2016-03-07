@@ -1,0 +1,61 @@
+{
+  "header": [
+    {
+      "name": "Magic Number",
+      "type": "UINT32",
+      "value": {
+        "data": "0x00000000",
+        "code": true
+      },
+      "description": "DNT file magic number."
+    },
+    {
+      "name": "Column Count",
+      "type": "UINT16",
+      "value": null,
+      "description": "Number of columns in this table."
+    },
+    {
+      "name": "Row Count",
+      "type": "UINT32",
+      "value": null,
+      "description": "Number of rows in this table."
+    },
+    {
+      "name": "Columns",
+      "type": "Column[ColumnCount]",
+      "value": null,
+      "description": "An array of Column declarations."
+    }
+  ],
+  "column": [
+    {
+      "name": "Column Name",
+      "type": "LPNNTS",
+      "value": null,
+      "description": "The name of this column."
+    },
+    {
+      "name": "Column Data Type",
+      "type": "UINT8",
+      "value": null,
+      "description": "The type of data this column contains. See Appendix A for the ID to data type mapping."
+    }
+  ],
+  "rows": [
+    {
+      "name": "Rows",
+      "type": "Row[Header.RowCount]",
+      "value": null,
+      "description": "Array of row entries."
+    }
+  ],
+  "row": [
+    {
+      "name": "Cell Entries",
+      "type": "Cell[Header.ColumnCount]",
+      "value": null,
+      "description": "Array of cells, one per column of data."
+    }
+  ]
+}

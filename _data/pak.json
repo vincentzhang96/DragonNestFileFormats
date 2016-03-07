@@ -1,0 +1,88 @@
+{
+  "header": [
+    {
+      "name": "Magic Number",
+      "type": "FBSTR[1024]",
+      "value": {
+        "data": "EyedentityGames Packing File 0.1",
+        "code": true
+      },
+      "description": "PAK file magic number/identifier string."
+    },
+    {
+      "name": "Unknown A",
+      "type": "INT32",
+      "value": {
+        "data": "0x0000000B",
+        "code": true
+      },
+      "description": "Unknown. Always 11 (0x0B)."
+    },
+    {
+      "name": "File Count",
+      "type": "UINT32",
+      "value": null,
+      "description": "Number of files in this PAK."
+    },
+    {
+      "name": "File Index Table Offset",
+      "type": "UINT32",
+      "value": null,
+      "description": "A pointer to the location of the file index table"
+    }
+  ],
+  "fileindextable": [
+    {
+      "name": "File Index Entries",
+      "type": "FileIndexEntry[Header.FileCount]",
+      "value": null,
+      "description": "An array of Header.FileCount File Index Entries describing the files in this PAK."
+    }
+  ],
+  "fileindexentry": [
+    {
+      "name": "File Path",
+      "type": "FBSTR[256]",
+      "value": null,
+      "description": "The (virtual) path of this file."
+    },
+    {
+      "name": "Raw Size",
+      "type": "UINT32",
+      "value": null,
+      "description": "The size of this file, in bytes, as it is on the disk in the PAK."
+    },
+    {
+      "name": "Real Size",
+      "type": "UINT32",
+      "value": null,
+      "description": "The size of this file, in bytes, when decompressed. This value may be zero, which simply means that you will not be able to pre-allocate a buffer when decompressing."
+    },
+    {
+      "name": "Compressed Size",
+      "type": "UINT32",
+      "value": null,
+      "description": "The size of this file, in bytes, when compressed in the PAK. Should be the same as Raw Size."
+    },
+    {
+      "name": "File Data Offset",
+      "type": "UINT32",
+      "value": null,
+      "description": "A pointer to the location of this file's data."
+    },
+    {
+      "name": "Unknown A",
+      "type": "UINT32",
+      "value": null,
+      "description": "Unknown. Seems to have no effect."
+    },
+    {
+      "name": "Unknown B",
+      "type": "40 bytes",
+      "value": {
+        "data": "NUL x 40"
+      },
+      "description": "Unknown. Seems to be just padding for future expansion. Filled with NUL bytes."
+    }
+  ]
+}
