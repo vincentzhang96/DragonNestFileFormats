@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "name": "Rows",
+    "type": "Row[Header.RowCount]",
+    "value": null,
+    "description": "Array of row entries."
+  }
+]

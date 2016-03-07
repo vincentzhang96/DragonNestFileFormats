@@ -1,15 +1,9 @@
 [
   {
-    "name": "Column Name Length",
-    "type": "UINT16",
-    "value": null,
-    "description": "Length of this column's name string."
-  },
-  {
     "name": "Column Name",
-    "type": "CHAR[ColumnNameLength]",
+    "type": "LPNNTS",
     "value": null,
-    "description": "The name of this column. This value is <b>NOT</b> NUL terminated! Read in ColumnNameLength bytes and append a NUL byte if necessary."
+    "description": "The name of this column."
   },
   {
     "name": "Column Data Type",
