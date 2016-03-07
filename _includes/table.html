@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+    <tr>
+        <th>Data Type</th>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for entry in include.data %}
+    <tr>
+        <td>
+            <code>{{ entry.type }}</code>
+        </td>
+        <td>
+            {% if entry.value.code == true %}
+            <code>{{ entry.value.data }}</code>
+            {% else %}
+            {{ entry.value.data }}
+            {% endif %}
+        </td>
+        <td>{{ entry.description }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
