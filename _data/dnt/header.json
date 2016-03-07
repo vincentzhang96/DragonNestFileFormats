@@ -15,15 +15,15 @@
     "description": "Number of columns in this table."
   },
   {
-    "name": "Columns",
-    "type": "Column[ColumnCount]",
-    "value": null,
-    "description": "An array of Column declarations."
-  },
-  {
     "name": "Row Count",
     "type": "UINT32",
     "value": null,
     "description": "Number of rows in this table."
+  },
+  {
+    "name": "Columns",
+    "type": "Column[ColumnCount]",
+    "value": null,
+    "description": "An array of Column declarations."
   }
 ]
