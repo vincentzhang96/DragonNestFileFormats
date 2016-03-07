@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Magic Number",
+    "type": "FBSTR[1024]",
+    "value": {
+      "data": "EyedentityGames Packing File 0.1",
+      "code": true
+    },
+    "description": "Pak file magic number/identifier string."
+  },
+  {
+    "name": "Unknown A",
+    "type": "INT32",
+    "value": {
+      "data": "0x0000000B",
+      "code": true
+    },
+    "description": "Unknown. Always 11 (0x0B)."
+  },
+  {
+    "name": "File Count",
+    "type": "UINT32",
+    "value": null,
+    "description": "Number of files in this Pak."
+  },
+  {
+    "name": "File Index Table Offset",
+    "type": "UINT32",
+    "value": null,
+    "description": "A pointer to the location of the file index table"
+  }
+]
