@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Magic Number",
+    "type": "UINT32",
+    "value": {
+      "data": "0x00000000",
+      "code": true
+    },
+    "description": "DNT file magic number."
+  },
+  {
+    "name": "Column Count",
+    "type": "UINT16",
+    "value": null,
+    "description": "Number of columns in this table."
+  },
+  {
+    "name": "Columns",
+    "type": "Column[ColumnCount]",
+    "value": null,
+    "description": "An array of Column declarations."
+  }
+]

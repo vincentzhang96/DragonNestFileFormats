@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Column Name Length",
+    "type": "UINT16",
+    "value": null,
+    "description": "Length of this column's name string."
+  },
+  {
+    "name": "Column Name",
+    "type": "CHAR[ColumnNameLength]",
+    "value": null,
+    "description": "The name of this column. This value is <b>NOT</b> NUL terminated! Read in ColumnNameLength bytes and append a NUL byte if necessary."
+  },
+  {
+    "name": "Column Data Type",
+    "type": "UINT8",
+    "value": null,
+    "description": "The type of data this column contains. See Appendix A for the ID to data type mapping."
+  }
+]

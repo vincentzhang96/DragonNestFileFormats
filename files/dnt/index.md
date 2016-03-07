@@ -18,12 +18,16 @@ The DNT file structure consists of a header, column headings, and rows of data.
 ### DNT Format
 
 #### Header
+{% include table.html data=site.data.dnt.header %}
 
-#### Columns
+#### Column
+{% include table.html data=site.data.dnt.column %}
 
 #### Rows
+{% include table.html data=site.data.dnt.rows %}
 
 #### Row
+{% include table.html data=site.data.dnt.row %}
 
 ### Appendices
 
