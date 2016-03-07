@@ -10,13 +10,20 @@
     {% for entry in include.data %}
     <tr>
         <td>
+            {{ entry.name }}
+        </td>
+        <td>
             <code>{{ entry.type }}</code>
         </td>
         <td>
-            {% if entry.value.code == true %}
-            <code>{{ entry.value.data }}</code>
+            {% if entry.value %}
+                {% if entry.value.code == true %}
+                <code>{{ entry.value.data }}</code>
+                {% else %}
+                {{ entry.value.data }}
+                {% endif %}
             {% else %}
-            {{ entry.value.data }}
+                <i>Varies</i>
             {% endif %}
         </td>
         <td>{{ entry.description }}</td>
