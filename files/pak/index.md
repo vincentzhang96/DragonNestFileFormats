@@ -25,3 +25,6 @@ The PAK file structure consists of a header, containing the number of subfiles a
 
 #### File Index Table Entry
 {% include table.html data=site.data.pak.fileindexentry %}
+
+#### File Data
+File data is compressed using [DEFLATE](https://en.wikipedia.org/wiki/DEFLATE).
