@@ -38,7 +38,8 @@ Row cells are stored linearly, where the encoding is specified by the correspond
 ### Appendices
 
 #### Appendix A: Column Data Types
-<table class="table">
+<div class="table-responsive">
+<table class="table table-bordered">
     <thead>
     <tr>
         <th>ID</th>
@@ -74,5 +75,6 @@ Row cells are stored linearly, where the encoding is specified by the correspond
     </tr>
     </tbody>
 </table>
+</div>
 
 &dagger; While DNT tables specify a type of double, it is still 32 bits long and equivalent to Float.
