@@ -1,0 +1,9 @@
+[
+  {
+    "name": "File Index Entries",
+    "type": "FileIndexEntry[Header.FileCount]",
+    "value": null,
+    "description": "An array of Header.FileCount File Index Entries describing the files in this Pak."
+  }
+
+]

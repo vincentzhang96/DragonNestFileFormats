@@ -17,7 +17,11 @@ The PAK file structure consists of a header, containing the number of subfiles a
 
 ### Pak Format
 
-#### Pak Header
+#### Header
 {% include table.html data=site.data.pak.header %}
 
+#### File Index Table
+{% include table.html data=site.data.pak.fileindextable %}
 
+#### File Index Table Entry
+{% include table.html data=site.data.pak.fileindexentry %}
