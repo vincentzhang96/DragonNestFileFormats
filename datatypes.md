@@ -35,5 +35,5 @@ LPSTRs are notated simply by `LPSTR`, with no array syntax (since the length is 
 
 To read a LPSTR, read in a `uint32` as `len` and allocate a buffer that is `len` bytes. Read in `len` bytes from file. For languages that are not null-termination based, truncate the last byte from the string. For languages that are, nothing else need be done.
 
-###Structures
+### Structures
 Structures will be defined explicitly in each format and referred to using the listed tag.
