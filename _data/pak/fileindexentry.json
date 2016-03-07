@@ -9,7 +9,7 @@
     "name": "Raw Size",
     "type": "UINT32",
     "value": null,
-    "description": "The size of this file, in bytes, as it is on the disk in the Pak."
+    "description": "The size of this file, in bytes, as it is on the disk in the PAK."
   },
   {
     "name": "Real Size",
@@ -21,7 +21,7 @@
     "name": "Compressed Size",
     "type": "UINT32",
     "value": null,
-    "description": "The size of this file, in bytes, when compressed in the Pak. Should be the same as Raw Size."
+    "description": "The size of this file, in bytes, when compressed in the PAK. Should be the same as Raw Size."
   },
   {
     "name": "File Data Offset",

@@ -6,7 +6,7 @@
       "data": "EyedentityGames Packing File 0.1",
       "code": true
     },
-    "description": "Pak file magic number/identifier string."
+    "description": "PAK file magic number/identifier string."
   },
   {
     "name": "Unknown A",
@@ -21,7 +21,7 @@
     "name": "File Count",
     "type": "UINT32",
     "value": null,
-    "description": "Number of files in this Pak."
+    "description": "Number of files in this PAK."
   },
   {
     "name": "File Index Table Offset",
