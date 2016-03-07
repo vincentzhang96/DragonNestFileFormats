@@ -10,9 +10,18 @@ repolink: /blob/gh-pages/index.md
 
 [Data Types](datatypes/)
 
+### External Files
+
  - [Package (.pak)](files/pak/)
+
+### Internal Files
+
  - [Dragon Nest Table (.dnt)](files/dnt/)
- - [Map INI files (.ini)](files/ini/)
+ - [Map Files](files/map/)
+ - [Object Visual Files](files/gfx/)
+ - [Object Action Files](files/act/)
+ - [UI Files](files/ui/)
+ - [Cutscene Files](files/dmv/)
 
 ## Contributing
 
