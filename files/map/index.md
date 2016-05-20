@@ -1,7 +1,7 @@
 ---
 title: Map Files
 subtitle: Map definition files
-layout: jumbo
+layout: jumbo-child
 permalink: /files/map/
 repolink: /blob/gh-pages/files/map/index.md
 ---
@@ -18,7 +18,7 @@ Map directories have the following structure:
 
 - `%DIR_NAME%/`
     - `%DIR_NAME%.dds` - Minimap texture
-    - `gridinfo.ini` - [Map Information](gridinfo/)
+    - `gridinfo.ini` - [Grid Information](gridinfo/)
     - `0_0/` - Zone (0, 0) data
         - `alphatable.ini` - [Terrain texture blending](terrainalpha/)
         - `colbuild.ini` - [Colbuild (unknown)](colbuild/)
