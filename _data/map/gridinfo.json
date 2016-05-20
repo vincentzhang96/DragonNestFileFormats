@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "name": "Parent World Name",
+      "type": "FBSTR[64]",
+      "value": null,
+      "description": "The name of the worldzone that this map belongs to."
+    },
+    {
+      "name": "Unknown A",
+      "type": "uint32",
+      "value": {
+        "data": "0x00000001",
+        "code": true
+      },
+      "description": "Unknown. Always seems to be 1."
+    },
+    {
+      "name": "Unknown B",
+      "type": "uint32",
+      "value": {
+        "data": "0x00000001",
+        "code": true
+      },
+      "description": "Unknown. Always seems to be 1."
+    },
+    {
+      "name": "Grid Length",
+      "type": "uint32",
+      "value": null,
+      "description": "The length of the stage, in whatever arbitrary units that are also used by other map files. Usually the same as grid Width."
+    },
+    {
+      "name": "Grid Width",
+      "type": "uint32",
+      "value": null,
+      "description": "The width of the stage, in whatever arbitrary units that are also used by other map files. Usuall the same as grid Length."
+    },
+    {
+      "name": "Unknown C",
+      "type": "FBSTR[64]",
+      "value":  {
+        "data": "0x00000032",
+        "code": true
+      },
+      "description": "Unknown. Always seems to be 50."
+    }
+  ]
+}
