@@ -8,6 +8,13 @@
 			<a href="{{ site.baseurl }}/" class="navbar-brand">Dragon Nest File Formats</a>
 		</div>
 		<ul class="nav navbar-nav">
+            {% if page.parent %}
+            <li>
+                <a href="{% if page.parent.url %}{{ page.parent.url }}{% else %}..{% endif %}">
+                    {{ page.parent.title }}
+                </a>
+            </li>
+            {% endif %}
 			<li class="active">
 				<a href="#">{{ page.title }}</a>
 			</li>
