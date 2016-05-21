@@ -18,6 +18,7 @@ Map directories have the following structure:
 
 - `%DIR_NAME%/`
     - `%DIR_NAME%.dds` - Minimap texture
+    - `%DIR_NAME%_map.dds` - Map texture
     - `gridinfo.ini` - [Grid Information](gridinfo/)
     - `0_0/` - Zone (0, 0) data
         - `alphatable.ini` - [Terrain texture blending](terrainalpha/)
