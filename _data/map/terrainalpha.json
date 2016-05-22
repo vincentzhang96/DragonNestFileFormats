@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "name": "Entry count",
+      "type": "UINT32",
+      "value": null,
+      "description": "Number of vertices. Should be equal to the corresponding `gridinfo.ini`'s (width + 1) * (height + 1)."
+    },
+    {
+      "name": "Data points",
+      "type": "UINT32[entryCount]",
+      "value": null,
+      "description": "An array of data points for each vertex, with each of the 4 textures taking 1 byte."
+    }
+  ]
+}
