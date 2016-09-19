@@ -6,13 +6,13 @@ permalink: /files/map/
 repolink: /blob/gh-pages/files/map/index.md
 ---
 
-#Overview
+# Overview
 
 Maps (or dungeons, or nests) in Dragon Nest reside in `/mapdata/grid/` as individual directories. The names of the 
 directories are internal names, as referenced in `resource/ext/maptable.dnt`, column `_ToolName1`. Do note that 
 letter casing **will not** match.
 
-##Layout
+## Layout
 
 Map directories have the following structure:
 
