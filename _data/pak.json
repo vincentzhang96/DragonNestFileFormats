@@ -2,7 +2,7 @@
   "header": [
     {
       "name": "Magic Number",
-      "type": "FBSTR[1024]",
+      "type": "FBSTR[256]",
       "value": {
         "data": "EyedentityGames Packing File 0.1",
         "code": true
@@ -29,6 +29,12 @@
       "type": "UINT32",
       "value": null,
       "description": "A pointer to the location of the file index table"
+    },
+    {
+      "name": "Padding",
+      "type": "UINT8[756]",
+      "value": null,
+      "description": "Padding bytes to make the PAK header 1024 bytes in total"
     }
   ],
   "fileindextable": [
